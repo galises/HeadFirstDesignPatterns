@@ -21,7 +21,7 @@ public class StrategyPatternMain {
 	
 	private static Character getCharacter (){
 		Character character = new King();
-		int randomCharacter = (int) Math.random() % 3;
+		int randomCharacter = (int) (Math.random() * 10) % 3;
 		switch (randomCharacter){
 		case 0:
 			character = new Troll();
